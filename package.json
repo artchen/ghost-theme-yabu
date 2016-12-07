@@ -1,0 +1,36 @@
+{
+  "name": "yabu-no-naka",
+  "version": "1.1.1",
+  "description": "Responsive ghost theme",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/rakugaki-yabu.git"
+  },
+  "keywords": [
+    "ghost",
+    "theme"
+  ],
+  "author": "Art Chen",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-less": "^3.3.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11",
+    "jquery": "^3.1.1",
+    "jshint": "^2.9.4"
+  }
+}

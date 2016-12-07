@@ -1,0 +1,124 @@
+// main: screen.less
+
+/* === Post list === */
+
+.post-list {
+  float: left;
+  width: 660px;
+  position: relative;
+  z-index: 10;
+  background: transparent;
+
+  @media only screen and (max-width: 960px) {
+    width: 520px;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .post-block {
+  	position: relative;
+    width: 100%;
+    padding: 25px 30px 25px 30px;
+    background: rgba(255,255,255,0.5);
+    margin-bottom: 20px;
+
+    .post-readmore {
+      text-align: right;
+
+      a {
+        display: inline-block;
+        font-size: 0.8125em;
+        color: rgba(38,135,133,0.7);
+        line-height: 20px;
+        vertical-align: middle;
+        padding: 0px 6px;
+
+        &:hover {
+    	    background: #758577;
+    		  color: rgba(255,255,255,0.95);
+        }
+      }
+    }
+	}
+}
+
+.post-title {
+	a {
+  	display: inline;
+  	&:hover {
+    	h1 {
+	    	color: rgba(38,135,133,0.9);
+    	}
+  	}
+  	h1{
+	    display: inline;
+	    font-weight: normal;
+	    font-size: 1.25em;
+	    color: rgba(0,0,0,0.8);
+	    -webkit-transition: all 0.3s;
+	    transition: all 0.3s;
+		}
+	}
+}
+
+.post-date {
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: 400;
+  color: rgba(0,0,0,0.5);
+  padding: 6px 5px 15px 0px;
+
+	span a {
+  	color: rgba(0,0,0,0.6);
+
+  	&:hover {
+    	color: rgba(0,0,0,0.9);
+  	}
+  }
+}
+.post-author {
+  font-size: 0.75em;
+  color: rgba(0,0,0,0.5);
+	a {
+  	color:rgba(0,0,0,0.5);
+
+  	&:hover {
+    	color: rgba(0,0,0,0.7);
+  	}
+  }
+}
+
+/* === Pagination === */
+
+.pagination {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: transparent;
+  display: block;
+
+	.page-number {
+  	display: none;
+  }
+	.older-posts, .newer-posts{
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    font-size: 0.8125em;
+    color: #fff;
+    background: rgba(70,93,76,0.75);
+    padding: 0px 10px;
+    text-decoration: none;
+    border-radius: 2px;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+
+    &:hover {
+	    background: rgba(70,93,76,0.9);
+    }
+  }
+	.older-posts {
+		float: right;
+	}
+}

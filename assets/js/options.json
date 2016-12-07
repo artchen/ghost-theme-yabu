@@ -1,0 +1,57 @@
+var theme_options = {
+  "y_author": "John Smith",
+  "y_social": [
+    {
+      "name": "facebook",
+      "url": "#"
+    },
+    {
+      "name": "twitter",
+      "url": "#"
+    },
+    {
+      "name": "googleplus",
+      "url": "#"
+    },
+    {
+      "name": "github",
+      "url": "#"
+    },
+    {
+      "name": "tumblr",
+      "url": "#"
+    },
+    {
+      "name": "flickr",
+      "url": "#"
+    },
+    {
+      "name": "dribbble",
+      "url": "#"
+    },
+    {
+      "name": "instagram",
+      "url": "#"
+    },
+    {
+      "name": "linkedin",
+      "url": "#"
+    },
+    {
+      "name": "pinterest",
+      "url": "#"
+    },
+    {
+      "name": "qq",
+      "url": "#"
+    },
+    {
+      "name": "renren",
+      "url": "#"
+    },
+    {
+      "name": "sina-weibo",
+      "url": "#"
+    }
+  ]
+}

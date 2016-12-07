@@ -1,0 +1,43 @@
+{{!< default}}
+
+<main class="post-list" role="main">
+    
+    <header class="page-taxonomy">
+        <h1>
+            <a href="{{@blog.url}}">Home</a>
+            <span class="small-arrow-right icon-arrow-right"></span>
+            <span>Author</span>
+            <span class="small-arrow-right icon-arrow-right"></span>
+            {{#author}}<a href="{{url}}">{{name}}</a>{{/author}}
+        </h1>
+    </header>
+
+    {{#foreach posts}}
+
+    <article class="{{post_class}} post-block">
+
+        <div class="post-title">
+            <a href="{{url absolute="true"}}">
+                <h1>{{title}}</h1>
+            </a>
+        </div>
+
+        <time class="post-date">{{date format="MMM DD, YYYY"}}</time>
+
+        <div class="post-content">
+            {{content words="140"}}
+        </div>
+
+        <div class="post-readmore">
+            <a href="{{url absolute="true"}}">
+                Read More →
+            </a>
+        </div>
+        
+    </article>
+
+    {{/foreach}}
+
+    {{pagination}}
+
+</main>

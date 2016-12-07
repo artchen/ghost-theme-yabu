@@ -1,0 +1,54 @@
+{{!< default}}
+
+<main class="single" role="main">
+
+    {{#post}}
+
+    <article class="{{post_class}} single-wrapper">
+
+        <div class="post-title">
+            <a href="{{url absolute="true"}}">
+                <h1>{{title}}</h1>
+            </a>
+        </div>
+        
+        <time class="post-date">{{date format="MMM DD, YYYY"}}</time>
+
+        <div class="post-content">
+            {{content}}
+        </div>
+
+
+        <footer class="single-footer">
+
+                <section class="single-footer-para single-share">
+                   
+                        <div class="single-share-list">
+                        <a class="icon-twitter" href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}"
+                            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                        </a>
+                        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                        </a>
+                        <a class="icon-googleplus" href="https://plus.google.com/share?url={{url absolute="true"}}"
+                           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                        </a>
+                    </div>
+                </section>
+
+                <div class="single-footer-para single-tags">
+                    {{tags separator=" · " prefix="- " suffix=" -"}}
+                </div>
+                <div class="single-footer-para single-cc">
+                    Contents licensed under Creative Commons <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en" rel="external">by-nc-sa 3.0</a>.
+                </div>
+                
+
+            </footer>
+        
+    </article>
+
+    {{/post}}
+
+
+</main>
