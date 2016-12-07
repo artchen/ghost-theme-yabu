@@ -25,13 +25,19 @@ For deploying your ghost blog, I personally recommend [pm2](http://pm2.keymetric
 
 ## Customize
 
-The theme uses [Gulp](http://gulpjs.com/) as build tool, which makes customization very simple and clean. First of all, run this command in terminal:
+The theme uses [Gulp](http://gulpjs.com/) as build tool, which makes customization very simple and clean.
+
+The first time your get the theme package, install dependencies:
+
+```bash
+npm install
+```
+
+Before making any changes, run the following command to ensure all changes is monitored and compiled:
 
 ```bash
 gulp watch
 ```
-
-This will ensure all changes is monitored and compiled.
 
 Then you can make changes in `src` folder, which contains all uncompressed source files. Gulp will automatically compile, compress and update changed files.
 
@@ -65,7 +71,7 @@ Here are the options:
 	* `desc`: Please be sure to write every line of your description inside `<p>` tag
 * `y_social`: Add social network icons displayed in the bottom of page
 
-Just to demonstrate how should a valid theme setting look like.
+Sample configuration:
 
 ```javascript
 var theme_options = {
@@ -92,7 +98,7 @@ var theme_options = {
 
 ## Sources and Credits
 
-* `/assets/images/social.svg` - icons from [icomoon.io](http://icomoon.io/)
+* `/assets/fonts` - icons from [icomoon.io](http://icomoon.io/)
 * `/assets/js/jquery.fitvids.js` - [FitVids.js](https://github.com/davatron5000/FitVids.js) by @ChrisCoyier, @davatron5000, @TrentWalton, @raygunray
 
 Thank you for choosing a [Rakugaki](http://rakugaki.me) theme. Enjoy blogging!
