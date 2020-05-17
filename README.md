@@ -1,5 +1,7 @@
 # Yabu no Naka
 
+**This theme is no longer maintained.**
+
 **Yabu no Naka** is a [Ghost](https://ghost.org) theme I made in college. It is named after a masterpiece of [Akutagawa Ryunosuke](https://en.wikipedia.org/wiki/Ry%C5%ABnosuke_Akutagawa).
 
 Some features of this theme:
